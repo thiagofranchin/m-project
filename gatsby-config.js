@@ -1,11 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Manhattan Project`,
+    description: `A project make for Decoupled Days 2020`,
     author: `@gatsbyjs`,
+    copyright: `© Copyright - All Rights Reserved`,
+    siteUrl: `https://manhattan-project-template.com/`,
+    socialMedia: {
+      github: 'https://github.com/',
+      codepen: 'https://codepen.io/',
+      facebook: 'https://www.facebook.com.br/',
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -29,6 +38,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
